@@ -8,4 +8,3 @@ let rollback = "Переменная";
 let fullPrice = "Переменная";
 let adaptive = "Переменная";
 
-console.log("");
