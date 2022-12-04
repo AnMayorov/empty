@@ -1,5 +1,5 @@
 const title = "Lesson02";
-const screens = "Простые, Сложные, Переменные";
+const screens = "Простые, Сложные, Интерактивные";
 const screenPrice =5000;
 const rollback = 50;
 const fullPrice = 300000;
