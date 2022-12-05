@@ -7,6 +7,7 @@ const adaptive = true;
 
 const layout = "Стоимость верстки экранов" + " " + screenPrice + " " + "рублей/ долларов/гривен/юани";
 const development = "Стоимость  разработки сайта" + " " + fullPrice + " " + "рублей/ долларов/гривен/юани";
+const percent = "Процент отката посреднику за работу" + " " + fullPrice * (rollback / 100);
 
 console.log(typeof title);
 console.log(typeof fullPrice);
@@ -19,5 +20,5 @@ console.log(screens.split(", "));
 console.log(layout);
 console.log(development);
 
-console.log(fullPrice * (rollback / 100));
+console.log(percent);
 
