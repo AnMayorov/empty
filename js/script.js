@@ -89,8 +89,8 @@ console.log(
   screens.toLowerCase().split(", ")
 );
 
-console.log(fullPrice);
+console.log(development);
+console.log(layout);
 console.log(percent);
 console.log(servicePercentPrice);
-console.log(layout);
-console.log(development);
+
