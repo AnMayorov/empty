@@ -41,6 +41,11 @@ const servicePrice2 = +prompt(
 
 /*--------------------------------------*/
 const fullPrice = 300000 + screenPrice + servicePrice1 + servicePrice2;
+const layout = "Стоимость верстки экранов" + " " + screenPrice + " " + "рублей/ долларов/гривен/юани";
+const development = "Стоимость  разработки сайта" + " " + fullPrice + " " + "рублей/ долларов/гривен/юани";
+const percentStr = "Процент отката посреднику за работу";
+const percent = fullPrice * (rollback / 100);
+const servicePercentPrice = Math.ceil(fullPrice - percent);
 
 if (fullPrice > 30000) {
   'Даем скидку в 10%';
@@ -66,13 +71,6 @@ switch (true) {
   default:
   console.log('Что-то пошло не так');
 }
-
-/*--------------------------------------*/ 
-const layout = "Стоимость верстки экранов" + " " + screenPrice + " " + "рублей/ долларов/гривен/юани";
-const development = "Стоимость  разработки сайта" + " " + fullPrice + " " + "рублей/ долларов/гривен/юани";
-const percentStr = "Процент отката посреднику за работу";
-const percent = fullPrice * (rollback / 100);
-const servicePercentPrice = Math.ceil(fullPrice - percent);
 
 /*--------------------------------------*/ 
 console.log(typeof title);
