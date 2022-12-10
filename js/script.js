@@ -34,20 +34,31 @@ const development = "Стоимость  разработки сайта" + " " 
 const percent = fullPrice * (rollback / 100);
 const servicePercentPrice = Math.ceil(fullPrice - percent);
 
+
 if (fullPrice > 30000) {
   console.log('Даем скидку в 10%');
-} else if (
-  fullPrice >= 15000, 
-  fullPrice < 30000) {
+} else if (fullPrice >= 15000) {
     console.log('Даем скидку в 5%');
 } else if (
-  fullPrice >= 0, 
-  fullPrice < 15000) {
+  fullPrice >= 0) {
     console.log('Скидка не предусмотрена');
 } else {
   console.log('Что-то пошло не так');
 }
 
+// switch (true) {
+//   case fullPrice > 30000:
+//     console.log('Даем скидку в 10%');
+//     break;
+//   case fullPrice >= 15000:
+//     console.log('Даем скидку в 5%');
+//     break;
+//   case fullPrice >= 0:
+//     console.log('Скидка не предусмотрена');
+//     break;
+//   default:
+//     console.log('Что-то пошло не так');
+// }
 
 /*--------------------------------------*/ 
 console.log(typeof title);
