@@ -37,3 +37,14 @@ function makePhrases() {
 
 // makePhrases вызывается один раз, но если потребуется, можно вызвать многократно 
 makePhrases();
+
+// цикл while для proDucts:
+let proDucts = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
+let hasBubbleGum = [false, false, false, true];
+let i = 0;
+while (i < hasBubbleGum.length) {
+  if (hasBubbleGum[i]) {
+    console.log(proDucts[i] + " contains bubble gum");
+  }
+  i = i + 1;
+}
